@@ -1,24 +1,23 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
-      backgroundColor: {  // Use backgroundColor instead of colors
+      backgroundColor: {
         dark: "#0f172a",
-        primary: "#22c55e",
-        accent: "#22d3ee"
+        accent: "#22d3ee",
       },
       textColor: {
         primary: "#0f172a",
-        accent: "#22d3ee"
+        accent: "#22d3ee",
       },
       fontFamily: {
-        roboto: ['Roboto', 'sans-serif'],
+        roboto: ["Roboto", "sans-serif"],
       },
     },
   },
   plugins: [],
-}
+};
