@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+@layer base {
+  body {
+    background-color: #0f172a; /* Directly use the hex code */
+    @apply text-gray-100 font-sans antialiased;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-bold tracking-tight;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .btn {
+    @apply px-6 py-3 rounded-lg font-semibold transition-all duration-200;
+  }
+
+  .btn-primary {
+    @apply text-gray-900 bg-gradient-to-r from-green-400 to-blue-500 hover:from-green-500 hover:to-blue-600;
+    background-color: #22c55e;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r;
+  }
+
+  .bg-gradient {
+    @apply bg-gradient-to-r ;
+  }
+
+  .glass-effect {
+    @apply backdrop-blur-sm bg-gray-900;
+  }
+}
+.custom-nav-bg {
+  background-color: #0f172a4f;
+  backdrop-filter: blur(5px);
+}
