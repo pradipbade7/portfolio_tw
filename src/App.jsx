@@ -39,7 +39,7 @@ function App() {
 
             <Contact />
           </motion.main>
-          <footer className="py-4 md:py-6 text-center text-gray-400 bg-green-800">
+          <footer className="py-1 md:py-4 text-sm text-center text-gray-400 bg-green-800">
             <p>&copy; <b>Pradip Bade</b>. Created with the help of <b>Copilot AI.</b></p>
           </footer>
         </div>
