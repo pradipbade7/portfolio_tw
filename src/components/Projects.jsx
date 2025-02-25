@@ -50,14 +50,16 @@ export default function Projects() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="bg-gray-800/50 rounded-lg overflow-hidden shadow-lg max-w-xs"
             >
-              <a href={project.link} target="_blank" rel="noopener noreferrer">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="bg-white h-48 object-fit place-self-center transform transition-transform duration-300 hover:scale-105"
-                  style={{ justifySelf: 'center' }}
-                />
-              </a>
+              <div className="flex justify-center items-center">
+                <a href={project.link} target="_blank" rel="noopener noreferrer">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="bg-white h-48 w-auto transition-transform duration-300 hover:scale-105"
+                  />
+                </a>
+              </div>
+
               <div className="p-6">
                 <a href={project.link} target="_blank" rel="noopener noreferrer">
                   <h3 className="text-xl font-semibold mb-2 text-center  transform transition-transform duration-300 hover:scale-105">{project.title}</h3>
