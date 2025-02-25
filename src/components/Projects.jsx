@@ -23,7 +23,7 @@ const projects = [
       "An online food ordering platform integrated with VivaWallet for payments and Deliverect for menu management, deployed on Azure.",
     tech: [".NET 5", "jQuery", "Bootstrap", "MS SQL"],
     image: "/projects/sf.png", // Update with the actual image path
-    link: "https://shadowfoods.com", 
+    link: "https://shadowfoods.com",
   },
   {
     title: "TTMind",
@@ -42,7 +42,7 @@ export default function Projects() {
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold mb-12 text-secondary text-center">Works</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center">
-        {projects.map((project, index) => (
+          {projects.map((project, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
@@ -55,6 +55,7 @@ export default function Projects() {
                   src={project.image}
                   alt={project.title}
                   className="bg-white h-48 object-fit place-self-center transform transition-transform duration-300 hover:scale-105"
+                  style={{ justifySelf: 'center' }}
                 />
               </a>
               <div className="p-6">

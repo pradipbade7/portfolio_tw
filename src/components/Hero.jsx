@@ -66,7 +66,7 @@ export default function Hero() {
 
         {/* View My Work Button */}
         <div className="mt-8 flex flex-col md:flex-row items-center justify-center gap-4">
-          <Link to="works" smooth={true} duration={500} className="z-10">
+          <Link to="works" smooth={true} duration={1000} className="z-10">
             <button className="px-6 py-3 bg-red-600 text-white font-semibold rounded-xl hover:bg-red-500 transition-colors">
               View My Work
             </button>
