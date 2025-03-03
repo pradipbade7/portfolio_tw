@@ -1,13 +1,10 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import About from './components/About';
-import Projects from './components/Projects';
-import Skills from './components/Skills';
-import Contact from './components/Contact';
-import Experience from './components/Experience';
 import Loading from './components/Loading';
+import Home from './pages/Home';
+import NotFound from './components/NotFound';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -18,33 +15,29 @@ function App() {
   }, []);
 
   return (
-    <AnimatePresence>
-      {loading ? (
-       <Loading />
-      ) : (
-        <div className="min-h-screen bg-primary text-white">
-          <Navbar />
-          <motion.main
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5 }}
-          >
-            <Hero />
-            <About />
-            <Skills />
-
-            <Projects />
-            <Experience />
-            
-
-            <Contact />
-          </motion.main>
-          <footer className="py-1 md:py-4 text-sm text-center text-gray-400 bg-green-800">
-            <p>&copy; <b>Pradip Bade</b>. Created with the help of <b>Copilot AI.</b></p>
-          </footer>
-        </div>
-      )}
-    </AnimatePresence>
+    <Router>
+      <AnimatePresence>
+        {loading ? (
+          <Loading />
+        ) : (
+          <div className="min-h-screen bg-primary text-white">
+            <motion.main
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5 }}
+            >
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="*" element={<NotFound />} />
+              </Routes>
+            </motion.main>
+            <footer className="py-1 md:py-4 text-sm text-center text-gray-400 bg-green-800">
+              <p>&copy; <b>Pradip Bade</b>. Created with the help of <b>Copilot AI.</b></p>
+            </footer>
+          </div>
+        )}
+      </AnimatePresence>
+    </Router>
   );
 }
 

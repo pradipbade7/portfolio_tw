@@ -1,11 +1,12 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
+
 import { FaLinkedin, FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import { BsMouse } from "react-icons/bs"; // Import mouse icon
 import AnimationHero from "./AnimationHero"; // Import the new component
-
+import { aboutData } from '../assets/data';
 export default function Hero() {
-  const fullName = "PRADIP BADE";
+  const fullName = aboutData.fullName;
   const [typedName, setTypedName] = useState("");
   const [index, setIndex] = useState(0);
 
@@ -33,13 +34,13 @@ export default function Hero() {
           Hi, I'm <span className="text-red-500">{typedName}</span>
         </h1>
         <p className="text-xl md:text-2xl mt-4 text-gray-400">
-          Full Stack Developer, Web Developer
+        {aboutData.role}
         </p>
 
         {/* Social & CV Buttons */}
         <div className="mt-8 flex flex-col md:flex-row items-center justify-center gap-4">
           <a
-            href="https://www.linkedin.com/in/pradipbade"
+            href={aboutData.linkedin}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-6 py-3 border border-gray-500 text-white font-semibold rounded-xl hover:bg-gray-700 transition-colors"
@@ -47,15 +48,15 @@ export default function Hero() {
             <FaLinkedin className="text-xl" /> LinkedIn
           </a>
           <a
-            href="https://github.com/pradipbade7"
-            target="_blank"
+              href={aboutData.githubUrl}
+              target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-6 py-3 border border-gray-500 text-white font-semibold rounded-xl hover:bg-gray-700 transition-colors"
           >
             <FaGithub className="text-xl" /> GitHub
           </a>
           <a
-            href="/Pradip_Bade_CV.pdf" // Update this with the correct path
+            href={aboutData.cv} // Update this with the correct path
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-6 py-3 bg-green-600 text-white font-semibold rounded-xl hover:bg-green-500 transition-colors"

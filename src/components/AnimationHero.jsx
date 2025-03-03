@@ -14,23 +14,27 @@ export default function AnimationHero() {
         fullScreen: { enable: false },
         background: { color: "transparent" },
         particles: {
-          number: { value: 100 }, // Increased number of particles for a denser look
+          number: { 
+            value: window.innerWidth < 640 ? 40 : 80 
+          }, 
           shape: {
-            type: ["circle", "" ], // Mix of shapes to represent stars and galaxy edges
+            type: ["dot", "circle" ], // Mix of shapes to represent stars and galaxy edges
           },
           color: {
             value: ["#FFFFFF", "#FFD700", "#8A2BE2", "#FF4500", "#00CED1"],
           },
           size: {
-            value: { min: 1, max: 5 }, // Smaller size range for a starry effect
+            value: { min: 1, max: 3 }, // Smaller size range for a starry effect
           },
           opacity: { 
-            value: { min: 0.3, max: 1 }, // Random opacity for a more natural look
+            value: { min: 0.1, max: 0.7 }, // Random opacity for a more natural look
           },
           move: {
             enable: true,
             speed: 0.5, // Slower speed for a calm effect
-            outModes: { default: "destroy" },
+            outModes: {
+              default: "bounce", // All edges bounce
+            },
             attract: {
               enable: true,
               rotate: {
@@ -43,24 +47,59 @@ export default function AnimationHero() {
             enable: true,
             distance: 150,
             color: "#ffffff",
-            opacity: 0.4,
-            width: 1,
+            opacity: 0.3,
+            width: 0.5,
           },
         },
         interactivity: {
           events: {
-            onHover: { enable: true, mode: "repulse" },
+            onHover: { enable: true, mode: "grab" },
             onClick: { enable: true, mode: "push" },
           },
           modes: {
-            push: {
-              particles_nb: 4, // Number of particles to add on click
+            grab: {
+              distance: 200,
+              links: { opacity: 0.5 }
+            },
+            bubble: {
+              distance: 400,
+              size: 40,
+              duration: 2,
+              opacity: 0.8
             },
             repulse: {
-              distance: 100,
-              duration: 2,
+              distance: 200,
+              duration: 0.4
             },
-          },
+            push: {
+              quantity: 4
+            },
+            remove: {
+              quantity: 2
+            },
+            attract: {
+              distance: 200,
+              duration: 0.4,
+              factor: 5
+            },
+            connect: {
+              distance: 80,
+              radius: 60,
+              links: { opacity: 0.5 }
+            },
+            trail: {
+              delay: 0.005,
+              quantity: 5,
+              particles: {
+                size: {
+                  value: 5
+                },
+                color: {
+                  value: "#ff0000"
+                }
+              }
+            }
+          }
         },
       }}
       style={{
