@@ -33,7 +33,7 @@ export const aboutData = {
   description: (
     <>
       I am a developer passionate about <strong className="text-green-400">building applications</strong> and have experience of working across industries like <strong className="text-green-400">e-commerce, insurance, and digital remittance</strong>.
-      I've worked with clients like <strong className="text-green-400">eRemit, Power, Eventim, DNA</strong>,
+      I've worked with clients like <strong className="text-green-400">Merchantrade Asia, Power, Eventim, DNA</strong>,
       focusing on personalized UI solutions, API integrations, and scalable platforms.  
       <br/><br/>
   
