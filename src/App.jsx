@@ -8,10 +8,15 @@ import MiniProjects from './pages/MiniProjects';
 
 function ExternalRedirect({ url }) {
   useEffect(() => {
-    window.location.href = url;
+    window.location.replace(url);
   }, [url]);
 
-  return null;
+  // Return a loading indicator while redirecting
+  return (
+    <div className="flex items-center justify-center h-screen">
+      <div className="text-xl font-semibold">Redirecting...</div>
+    </div>
+  );
 }
 
 function App() {
@@ -36,9 +41,9 @@ function App() {
             >
               <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="*" element={<NotFound />} />
                 <Route path="/miniprojects" element={<MiniProjects />} />
                 <Route path="/17game" element={<ExternalRedirect url="https://17cardgame.netlify.app/" />} />
+                <Route path="*" element={<NotFound />} />
               </Routes>
             </motion.main>
             <footer className="py-1 md:py-4 text-sm text-center text-gray-400 bg-green-800">
