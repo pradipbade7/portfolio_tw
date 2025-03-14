@@ -1,12 +1,18 @@
 import { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Navbar from './components/Navbar';
 import Loading from './components/Loading';
 import Home from './pages/Home';
 import NotFound from './components/NotFound';
 import MiniProjects from './pages/MiniProjects';
 
+function ExternalRedirect({ url }) {
+  useEffect(() => {
+    window.location.href = url;
+  }, [url]);
+
+  return null;
+}
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -16,10 +22,6 @@ function App() {
     setTimeout(() => setLoading(false), 1000);
   }, []);
 
-  function ExternalRedirect({ url }) {
-    window.location.href = url;
-    return null;
-  }
   return (
     <Router>
       <AnimatePresence>
