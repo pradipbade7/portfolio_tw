@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
-
+import { Link as Link2 } from "react-router-dom";
 import { FaLinkedin, FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import { BsMouse } from "react-icons/bs"; // Import mouse icon
 import AnimationHero from "./AnimationHero"; // Import the new component
@@ -67,11 +67,11 @@ export default function Hero() {
 
         {/* View My Work Button */}
         <div className="mt-8 flex flex-col md:flex-row items-center justify-center gap-4">
-          <Link to="works" smooth={true} duration={1000} className="z-10">
+          <Link2 to="/miniprojects"  className="z-10">
             <button className="px-6 py-3 bg-red-600 text-white font-semibold rounded-xl hover:bg-red-500 transition-colors">
               View My Work
             </button>
-          </Link>
+          </Link2>
         </div>
 
         {/* Mouse Scroll Down Button */}

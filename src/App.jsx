@@ -5,6 +5,8 @@ import Navbar from './components/Navbar';
 import Loading from './components/Loading';
 import Home from './pages/Home';
 import NotFound from './components/NotFound';
+import MiniProjects from './pages/MiniProjects';
+
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -14,6 +16,10 @@ function App() {
     setTimeout(() => setLoading(false), 1000);
   }, []);
 
+  function ExternalRedirect({ url }) {
+    window.location.href = url;
+    return null;
+  }
   return (
     <Router>
       <AnimatePresence>
@@ -29,6 +35,8 @@ function App() {
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="*" element={<NotFound />} />
+                <Route path="/miniprojects" element={<MiniProjects />} />
+                <Route path="/17game" element={<ExternalRedirect url="https://17cardgame.netlify.app/" />} />
               </Routes>
             </motion.main>
             <footer className="py-1 md:py-4 text-sm text-center text-gray-400 bg-green-800">

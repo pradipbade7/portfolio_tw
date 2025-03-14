@@ -133,6 +133,13 @@ export const myprojects = [
     websiteUrl: "https://goaltalks.com",
     githubUrl: "https://github.com/pradipbade7/GoalTalksComingSoon",
   },
+  {
+    title: "17 or Nothing",
+    description: "A strategic card game where players draw cards to reach as close to 17 as possible without exceeding it.",
+    image: "/projects/17.png",
+    websiteUrl: "https://17cardgame.netlify.app/",
+    githubUrl: "https://github.com/pradipbade7/card-games",
+  }
 ];
 
 export const projects = [
