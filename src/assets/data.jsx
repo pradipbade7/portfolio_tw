@@ -1,5 +1,5 @@
 import { FaReact, FaNodeJs, FaVuejs, FaDatabase, FaMicrosoft, FaHtml5, FaCss3, FaJs, FaCogs } from 'react-icons/fa';
-import { SiDotnet, SiPostgresql, SiSharp, SiTypescript, SiBootstrap, SiJquery } from 'react-icons/si';
+import { SiDotnet, SiPostgresql, SiSharp, SiTypescript, SiBootstrap, SiJquery, SiSupabase } from 'react-icons/si';
 import { TbBrandCSharp } from "react-icons/tb";
 
 import { PiFileSqlLight } from "react-icons/pi";
@@ -188,13 +188,15 @@ export const skills = {
     { name: "React", icon: <FaReact />, color: "bg-blue-400" },
     { name: "Vue.js", icon: <FaVuejs />, color: "bg-green-600" },
     { name: "Typescript", icon: <SiTypescript />, color: "bg-blue-600" },
-    { name: ".NET Core", icon: <SiDotnet />, color: "bg-purple-700" },
+    { name: ".NET", icon: <SiDotnet />, color: "bg-purple-700" },
+    { name: "Node.js", icon: <FaNodeJs />, color: "bg-green-600" },    
     { name: "C#", icon: <SiSharp />, color: "bg-pink-800" },
     { name: "PostgreSQL", icon: <SiPostgresql />, color: "bg-blue-800" },
     { name: "SQL Server", icon: <FaDatabase />, color: "bg-gray-700" },
   ],
   tools: [
     { name: "Azure", icon: <VscAzure />, color: "bg-blue-700" },
+    { name: "Supabase", icon: <SiSupabase />, color: "bg-green-600" },
     { name: "Docker", icon: <FaDocker />, color: "bg-blue-500" },
     { name: "Git", icon: <FaGitAlt />, color: "bg-red-500" },
     { name: "Jira", icon: <SiJirasoftware />, color: "bg-blue-600" },
