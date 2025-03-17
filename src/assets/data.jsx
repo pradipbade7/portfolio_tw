@@ -187,6 +187,7 @@ export const skills = {
     { name: "Javscript", icon: <SiJavascript />, color: "bg-yellow-500" },
     { name: "React", icon: <FaReact />, color: "bg-blue-400" },
     { name: "Vue.js", icon: <FaVuejs />, color: "bg-green-600" },
+    { name: "Typescript", icon: <SiTypescript />, color: "bg-blue-600" },
     { name: ".NET Core", icon: <SiDotnet />, color: "bg-purple-700" },
     { name: "C#", icon: <SiSharp />, color: "bg-pink-800" },
     { name: "PostgreSQL", icon: <SiPostgresql />, color: "bg-blue-800" },
