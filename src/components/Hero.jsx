@@ -69,7 +69,7 @@ export default function Hero() {
         <div className="mt-8 flex flex-col md:flex-row items-center justify-center gap-4">
           <Link2 to="/miniprojects"  className="z-10">
             <button className="px-6 py-3 bg-red-600 text-white font-semibold rounded-xl hover:bg-red-500 transition-colors">
-              View My Work
+            More Projects
             </button>
           </Link2>
         </div>
