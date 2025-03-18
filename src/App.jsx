@@ -38,6 +38,7 @@ function App() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5 }}
+              style={{ minHeight: 'calc(100vh - 2.5rem)' }}
             >
               <Routes>
                 <Route path="/" element={<Home />} />
@@ -47,7 +48,7 @@ function App() {
               </Routes>
             </motion.main>
             <footer className="py-1 md:py-2 text-sm text-center text-gray-200 bg-green-800">
-              <p>&copy; <b>Pradip Bade</b>. Created with the help of <b>Copilot AI.</b></p>
+            <p>&copy; 2025 <b>Pradip Bade</b> | All Rights Reserved</p>
             </footer>
           </div>
         )}
