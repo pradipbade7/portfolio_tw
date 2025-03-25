@@ -44,6 +44,7 @@ function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/miniprojects" element={<MiniProjects />} />
                 <Route path="/17game" element={<ExternalRedirect url="https://17cardgame.netlify.app/" />} />
+                <Route path="/sevenslot" element={<ExternalRedirect url="https://sevenslot.netlify.app/" />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </motion.main>

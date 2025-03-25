@@ -15,6 +15,12 @@ export default function MyProjects() {
           <AnimatePresence>
             {myprojects.map((project, index) => (
               (index < 6 || showAll) && (
+                <a
+                        href={project.websiteUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-400 hover:text-white transition-colors duration-300"
+                      >
                 <motion.div
                   key={index}
                   initial={{ opacity: 0, y: 20 }}
@@ -50,6 +56,7 @@ export default function MyProjects() {
                     </div>
                   </div>
                 </motion.div>
+                </a>
               )
             ))}
           </AnimatePresence>
