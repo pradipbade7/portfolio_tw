@@ -139,6 +139,13 @@ export const myprojects = [
     image: "/projects/17.png",
     websiteUrl: "https://17cardgame.netlify.app/",
     githubUrl: "https://github.com/pradipbade7/card-games",
+  },
+  {
+    title: "Simple Slot",
+    description: "A modern, interactive 5x3 slot machine game with realistic animations, sound effects, and confetti celebrations for big wins.",
+    image: "/projects/sevenslot.png",
+    websiteUrl: "https://sevenslot.netlify.app/",
+    githubUrl: "https://github.com/pradipbade7/simple-slot",
   }
 ];
 
