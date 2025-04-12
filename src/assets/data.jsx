@@ -113,6 +113,7 @@ export const experienceData = [
 
 export const myprojects = [
   {
+    id: 1,
     title: "Quiz App",
     description: "A quiz application built with React that allows users to test their knowledge in various programming languages and technologies.",
     image: "/projects/quiz.png",
@@ -120,6 +121,7 @@ export const myprojects = [
     githubUrl: "https://github.com/pradipbade7/quiz-app",
   },
   {
+    id: 2,
     title: "Portfolio",
     description: " Modern, responsive portfolio website built with React, Vite, and Tailwind CSS.",
     image: "/projects/pradip-logo.png",
@@ -127,6 +129,7 @@ export const myprojects = [
     githubUrl: "https://github.com/pradipbade7/portfolio_tw",
   },
   {
+    id: 3,
     title: "GoalTalks",
     description: "GoalTalks – Where football fans unite for live discussions, match tracking, and real-time engagement.",
     image: "/projects/gt.png",
@@ -134,6 +137,7 @@ export const myprojects = [
     githubUrl: "https://github.com/pradipbade7/GoalTalksComingSoon",
   },
   {
+    id: 4,
     title: "17 or Nothing",
     description: "A strategic card game where players draw cards to reach as close to 17 as possible without exceeding it.",
     image: "/projects/17.png",
@@ -141,6 +145,7 @@ export const myprojects = [
     githubUrl: "https://github.com/pradipbade7/card-games",
   },
   {
+    id: 5,
     title: "Simple Slot",
     description: "A modern, interactive 5x3 slot machine game with realistic animations, sound effects, and confetti celebrations for big wins.",
     image: "/projects/sevenslot.png",
@@ -148,6 +153,7 @@ export const myprojects = [
     githubUrl: "https://github.com/pradipbade7/simple-slot",
   },
  {
+  id: 6,
   title: "T9 Word-Match",
   description: "The T9 Word Matcher converts numeric input from a T9 keypad (like old mobile phones) into possible matching words. Users can type digit sequences and see matching words in real-time. For example, typing '4663' could match 'home' or 'good'.",
   image: "/projects/t9.png",
