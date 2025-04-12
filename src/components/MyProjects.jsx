@@ -5,7 +5,6 @@ import { myprojects } from '../assets/data';
 
 
 export default function MyProjects() {
-  const [showAll, setShowAll] = useState(false);
 
   return (
     <section className="py-20 mx-5" >
@@ -14,7 +13,7 @@ export default function MyProjects() {
         <div className="grid justify-center grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
           <AnimatePresence>
             {myprojects.map((project, index) => (
-              (index < 6 || showAll) && (
+              
                 <a
                         href={project.websiteUrl}
                         target="_blank"
@@ -35,7 +34,7 @@ export default function MyProjects() {
                     className="w-full h-36 md:h-40 object-cover object-center transition-transform duration-300 hover:scale-105"
                   />
                   <div className="p-4">
-                    <h3 className="text-lg font-semibold text-white mb-2 text-center">{project.title}</h3>
+                    <h3 className="font-semibold text-white mb-2 text-center">{project.title}</h3>
                     <div className="flex justify-between items-center">
                       <a
                         href={project.githubUrl}
@@ -57,25 +56,12 @@ export default function MyProjects() {
                   </div>
                 </motion.div>
                 </a>
-              )
+              
             ))}
           </AnimatePresence>
         </div>
 
-        {myprojects.length > 6 && (
-          <div className="flex justify-center mt-8">
-            <button
-              onClick={() => setShowAll(!showAll)}
-              className="flex items-center gap-2 px-6 py-3 bg-gray-800 text-white rounded-lg hover:bg-gray-700 transition-all duration-00"
-            >
-              {showAll ? (
-                <>Show Less <FaChevronUp className="text-sm" /></>
-              ) : (
-                <>View All Projects <FaChevronDown className="text-sm" /></>
-              )}
-            </button>
-          </div>
-        )}
+ 
       </div>
     </section>
   );

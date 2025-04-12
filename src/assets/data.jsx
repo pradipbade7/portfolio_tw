@@ -146,7 +146,14 @@ export const myprojects = [
     image: "/projects/sevenslot.png",
     websiteUrl: "https://sevenslot.netlify.app/",
     githubUrl: "https://github.com/pradipbade7/simple-slot",
-  }
+  },
+ {
+  title: "T9 Word-Match",
+  description: "The T9 Word Matcher converts numeric input from a T9 keypad (like old mobile phones) into possible matching words. Users can type digit sequences and see matching words in real-time. For example, typing '4663' could match 'home' or 'good'.",
+  image: "/projects/t9.png",
+  websiteUrl: "https://t9solution-1.onrender.com/",
+  githubUrl: "https://github.com/pradipbade7/t9solution",
+} 
 ];
 
 export const projects = [
