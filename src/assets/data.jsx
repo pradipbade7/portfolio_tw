@@ -147,7 +147,7 @@ export const myprojects = [
   {
     id: 5,
     title: "Simple Slot",
-    description: "A modern, interactive 5x3 slot machine game with realistic animations, sound effects, and confetti celebrations for big wins.",
+    description: "Frontend-only: a modern, interactive 5×3 slot machine game with realistic animations, thoughtful sound design, and confetti celebrations that highlight big wins.",
     image: "/projects/sevenslot.png",
     websiteUrl: "https://sevenslot.netlify.app/",
     githubUrl: "https://github.com/pradipbade7/simple-slot",

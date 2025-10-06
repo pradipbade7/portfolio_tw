@@ -17,7 +17,7 @@ export default function MyProjects() {
   return (
     <section className="py-20 mx-5" >
       <div className="container mx-auto px-4">
-        <h2 className="text-2xl font-bold mb-8 text-white text-center">Mini Projects</h2>
+        <h2 className="text-2xl font-bold mb-8 text-white text-center">My Projects</h2>
         <div className="grid justify-center grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
           <AnimatePresence>
             {myprojects.map((project, index) => (

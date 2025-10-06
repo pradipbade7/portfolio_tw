@@ -67,9 +67,9 @@ export default function Hero() {
 
         {/* View My Work Button */}
         <div className="mt-8 flex flex-col md:flex-row items-center justify-center gap-4">
-          <Link2 to="/miniprojects"  className="z-10">
+          <Link2 to="/myprojects"  className="z-10">
             <button className="px-6 py-3 bg-red-600 text-white font-semibold rounded-xl hover:bg-red-500 transition-colors">
-            Mini Projects
+            See My Projects
             </button>
           </Link2>
         </div>
