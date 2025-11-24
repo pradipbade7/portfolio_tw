@@ -1,5 +1,5 @@
 import { FaReact, FaNodeJs, FaVuejs, FaDatabase, FaMicrosoft, FaHtml5, FaCss3, FaJs, FaCogs } from 'react-icons/fa';
-import { SiDotnet, SiPostgresql, SiSharp, SiTypescript, SiBootstrap, SiJquery, SiSupabase, SiTailwindcss } from 'react-icons/si';
+import { SiDotnet, SiPostgresql, SiSharp,SiNextdotjs, SiThreedotjs, SiTypescript, SiBootstrap, SiJquery, SiSupabase, SiTailwindcss } from 'react-icons/si';
 import { TbBrandCSharp } from "react-icons/tb";
 
 import { PiFileSqlLight } from "react-icons/pi";
@@ -44,7 +44,7 @@ export const aboutData = {
   role: "Full Stack Developer, Web Developer",
   linkedin: "https://www.linkedin.com/in/pradipbade",
   githubUrl: "https://github.com/pradipbade7",
-  cv: "/Pradip_Bade_CV.pdf",
+  cv: "/Pradip_Bade_CV_2026.pdf",
   tagline: '"Code by day, football stats by night—debugging life one commit and goal at a time." ⚽💻'
 };
 
@@ -112,29 +112,48 @@ export const experienceData = [
 ];
 
 export const myprojects = [
+
   {
+    id: 3,
+    title: "Goal Guess",
+    description: "It's a fun football prediction game where you guess match scores and play with your friends.",
+    image: "/projects/goalguess.png",
+    websiteUrl: "https://goalguess.com",
+    techstack: [
+      { name: "Next.js", icon: <SiNextdotjs />, color: "bg-gray-700" },    
+      { name: "Typescript", icon: <SiTypescript />, color: "bg-blue-600" },
+      { name: "Supabase", icon: <SiSupabase />, color: "bg-green-600" },
+      { name: "Tailwind", icon: <SiTailwindcss />, color: "bg-blue-400" },
+      { name: "PostgreSQL", icon: <SiPostgresql />, color: "bg-blue-800" },
+
+    ]
+  },
+  {
+    id: 6,
+    title: "T9 Word-Match",
+    description: "The T9 Word Matcher converts numeric input from a T9 keypad (like old mobile phones) into possible matching words. Users can type digit sequences and see matching words in real-time. For example, typing '4663' could match 'home' or 'good'.",
+    image: "/projects/t9.png",
+    websiteUrl: "https://t9solution-1.onrender.com/",
+    githubUrl: "https://github.com/pradipbade7/t9solution",
+    techstack: [
+      { name: "Javscript", icon: <SiJavascript />, color: "bg-yellow-500" },
+      { name: "React", icon: <FaReact />, color: "bg-blue-400" },
+      { name: ".NET", icon: <SiDotnet />, color: "bg-purple-700" },  
+      { name: "C#", icon: <SiSharp />, color: "bg-pink-800" },
+      { name: "Docker", icon: <FaDocker />, color: "bg-blue-500" }
+    ],
+  },
+   {
     id: 1,
     title: "Quiz App",
-    description: "A quiz application built with React that allows users to test their knowledge in various programming languages and technologies.",
+    description: "A simple quiz application built with React and JS.",
     image: "/projects/quiz.png",
     websiteUrl: "https://codestackquiz.netlify.app/",
     githubUrl: "https://github.com/pradipbade7/quiz-app",
-  },
-  {
-    id: 2,
-    title: "Portfolio",
-    description: " Modern, responsive portfolio website built with React, Vite, and Tailwind CSS.",
-    image: "/projects/pradip-logo.png",
-    websiteUrl: "https://pradipbade.com",
-    githubUrl: "https://github.com/pradipbade7/portfolio_tw",
-  },
-  {
-    id: 3,
-    title: "GoalTalks",
-    description: "GoalTalks – Where football fans unite for live discussions, match tracking, and real-time engagement.",
-    image: "/projects/gt.png",
-    websiteUrl: "https://goaltalks.com",
-    githubUrl: "https://github.com/pradipbade7/GoalTalksComingSoon",
+    techstack: [
+      { name: "Javscript", icon: <SiJavascript />, color: "bg-yellow-500" },
+    { name: "React", icon: <FaReact />, color: "bg-blue-400" }
+    ]
   },
   {
     id: 4,
@@ -143,23 +162,25 @@ export const myprojects = [
     image: "/projects/17.png",
     websiteUrl: "https://17cardgame.netlify.app/",
     githubUrl: "https://github.com/pradipbade7/card-games",
+    techstack: [
+      { name: "Javscript", icon: <SiJavascript />, color: "bg-yellow-500" },
+      { name: "React", icon: <FaReact />, color: "bg-blue-400" },
+      { name: "Three.Js", icon: <SiThreedotjs />, color: "bg-gray-700" }
+    ],
   },
   {
     id: 5,
     title: "Simple Slot",
-    description: "Frontend-only: a modern, interactive 5×3 slot machine game with realistic animations, thoughtful sound design, and confetti celebrations that highlight big wins.",
+    description: "Frontend-only interactive 5×3 slot machine game.",
     image: "/projects/sevenslot.png",
     websiteUrl: "https://sevenslot.netlify.app/",
     githubUrl: "https://github.com/pradipbade7/simple-slot",
+    techstack: [
+    { name: "Javscript", icon: <SiJavascript />, color: "bg-yellow-500" },
+    { name: "React", icon: <FaReact />, color: "bg-blue-400" },
+    ],
   },
- {
-  id: 6,
-  title: "T9 Word-Match",
-  description: "The T9 Word Matcher converts numeric input from a T9 keypad (like old mobile phones) into possible matching words. Users can type digit sequences and see matching words in real-time. For example, typing '4663' could match 'home' or 'good'.",
-  image: "/projects/t9.png",
-  websiteUrl: "https://t9solution-1.onrender.com/",
-  githubUrl: "https://github.com/pradipbade7/t9solution",
-} 
+
 ];
 
 export const projects = [
@@ -209,6 +230,7 @@ export const skills = {
     { name: "Vue.js", icon: <FaVuejs />, color: "bg-green-600" },
     { name: "Typescript", icon: <SiTypescript />, color: "bg-blue-600" },
     { name: ".NET", icon: <SiDotnet />, color: "bg-purple-700" },
+    { name: "Next.js", icon: <SiNextdotjs />, color: "bg-gray-800" },    
     { name: "Node.js", icon: <FaNodeJs />, color: "bg-green-600" },    
     { name: "C#", icon: <SiSharp />, color: "bg-pink-800" },
     { name: "PostgreSQL", icon: <SiPostgresql />, color: "bg-blue-800" },
@@ -220,5 +242,7 @@ export const skills = {
     { name: "Tailwind", icon: <SiTailwindcss />, color: "bg-blue-400" },
     { name: "Git", icon: <FaGitAlt />, color: "bg-red-500" },
     { name: "Jira", icon: <SiJirasoftware />, color: "bg-blue-600" },
+    { name: "Docker", icon: <FaDocker />, color: "bg-blue-500" },
+    
   ]
 }

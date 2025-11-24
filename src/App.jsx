@@ -49,7 +49,7 @@ function App() {
               </Routes>
             </motion.main>
             <footer className="py-1 md:py-2 text-sm text-center text-gray-200 bg-green-800">
-            <p>&copy; 2025 <b>Pradip Bade</b> | All Rights Reserved</p>
+            <p>&copy; 2025 <b>Pradip Bade</b></p>
             </footer>
           </div>
         )}
