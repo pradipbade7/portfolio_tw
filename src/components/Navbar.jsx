@@ -35,7 +35,7 @@ export default function Navbar() {
           </Link>
         </div>
         <div className="hidden md:flex gap-6">
-          {['home', 'about', 'experience', 'contact'].map((item) => (
+          {['home', 'about', 'experience'].map((item) => (
             <Link
               key={item}
               to={item==='experience' ? 'works' : item}
@@ -60,7 +60,7 @@ export default function Navbar() {
       {isOpen && (
         <div className="md:hidden bg-primary/90 backdrop-blur-sm">
           <div className="container mx-auto px-4 py-3 flex flex-col gap-4">
-            {['home', 'about', 'experience', 'contact'].map((item) => (
+            {['home', 'about', 'experience'].map((item) => (
               <Link
                 key={item}
                 to={item}
